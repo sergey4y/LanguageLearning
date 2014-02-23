@@ -16,7 +16,7 @@ public class SimpleWriter {
 	public static void writeListWithCount(String fileName, List<WordWithCount> list) throws FileNotFoundException, UnsupportedEncodingException{
 		PrintWriter writer = null;
 		try{
-			writer = new PrintWriter(fileName, "UTF-8");
+			writer = new PrintWriter(fileName, SimpleReader.UTF8);
 			for(WordWithCount w : list){
 				writer.println(w);
 			}
@@ -36,7 +36,7 @@ public class SimpleWriter {
 		int i=1;
 		double sumFreq = 0;
 		try{
-			writer = new PrintWriter(fileName, "UTF-8");
+			writer = new PrintWriter(fileName, SimpleReader.UTF8);
 			for(WordWithCount w : list){
 				double freq = 100.0*w.getCount()/total;
 				sumFreq += freq;
@@ -56,7 +56,7 @@ public class SimpleWriter {
 	public static void writeStringToFile(String string, String fileName) throws FileNotFoundException, UnsupportedEncodingException{
 		PrintWriter writer = null;
 		try{
-			writer = new PrintWriter(fileName, "UTF-8");
+			writer = new PrintWriter(fileName, SimpleReader.UTF8);
 			writer.println(string);
 		} finally {
 			if(writer != null){

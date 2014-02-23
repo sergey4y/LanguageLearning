@@ -38,7 +38,7 @@ public class SimpleReader {
 		BufferedReader br = null;
 		StringBuffer sb = new StringBuffer();
 		try{
-			br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), "UTF-8"));
+			br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), UTF8));
 			String line = null;
 			while((line = br.readLine()) != null){
 				sb.append(line);
@@ -58,7 +58,7 @@ public class SimpleReader {
 		BufferedReader br = null;
 		BagOfWords bow = new BagOfWords();
 		try{
-			br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), "UTF-8"));
+			br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), UTF8));
 			String line = null;
 			while((line = br.readLine()) != null){
 				String[] s = line.split("-");
@@ -74,4 +74,6 @@ public class SimpleReader {
 			}
 		}
 	}
+	
+	public static final String UTF8 = "UTF-8";
 }

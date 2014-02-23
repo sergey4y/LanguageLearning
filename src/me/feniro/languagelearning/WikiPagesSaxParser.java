@@ -18,6 +18,12 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+/**
+ * Parsing of Wikipedia articles dump.
+ * 
+ * @author Sergey Yakimovich
+ *
+ */
 public class WikiPagesSaxParser extends DefaultHandler {
 	protected String currElement = ""; 
 	protected WikiPage currPage;
