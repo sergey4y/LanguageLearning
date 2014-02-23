@@ -14,6 +14,12 @@ import me.feniro.languagelearning.SimpleReader;
 import me.feniro.languagelearning.SimpleWriter;
 import me.feniro.languagelearning.WikiPagesSaxParser;
 
+/**
+ * Calculation of most frequent words in German Wikipedia.
+ * 
+ * @author Sergey Yakimovich
+ *
+ */
 public class CalcWordFreq extends WikiPagesSaxParser{
 	
 	@Override

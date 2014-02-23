@@ -12,6 +12,12 @@ import org.xml.sax.SAXException;
 import me.feniro.languagelearning.SimpleWriter;
 import me.feniro.languagelearning.WikiPagesSaxParser;
 
+/**
+ * Parsing of articles from the dump of German Wikipedia and writing this articles to separate files.
+ * 
+ * @author Sergey Yakimovich
+ *
+ */
 public class WriteArticlesToFolders extends WikiPagesSaxParser{
 	
 	@Override
